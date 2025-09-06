@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #333; color: white; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; }
+.hero { padding: 2em; text-align: center; background: #f4f4f4; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; padding: 1em; }
+.service-card { background: white; border: 1px solid #ccc; padding: 1em; text-align: center; border-radius: 8px; }
+footer { text-align: center; padding: 1em; background: #333; color: white; }

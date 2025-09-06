@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Repair in More</title>
+  <meta name="description" content="Fast & Reliable Mobile Repair in More. Same-day service, affordable pricing, and expert technicians." />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    console.log("Loading Google Analytics script...");
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments); console.log("gtag called with:", arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+    console.log("Google Analytics initialized with ID G-XXXXXXXXXX");
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body onload="console.log('Page fully loaded')">
+  <header>
+    <div class="logo">📱 MobileFix</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1 id="hero-title"></h1>
+    <p id="hero-tagline"></p>
+    <div class="cta-buttons">
+      <a id="cta-call" href="#" class="btn-primary">Call Now</a>
+      <a href="#contact" class="btn-secondary">Get a Quote</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid" id="services-list"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p id="about-text"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p id="contact-info"></p>
+
+    <form name="contact" method="POST" data-netlify="true" action="thanks.html" onsubmit="console.log('Form submitted', this)">
+      <input type="hidden" name="form-name" value="contact">
+      <label>Name: <input type="text" name="name" required oninput="console.log('Name input:', this.value)"></label>
+      <label>Phone: <input type="tel" name="phone" required oninput="console.log('Phone input:', this.value)"></label>
+      <label>Message: <textarea name="message" required oninput="console.log('Message input:', this.value)"></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MobileFix • All Rights Reserved</p>
+  </footer>
+
+  <!-- Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js" onload="console.log('Netlify CMS loaded')"></script>
+</body>
+</html>
